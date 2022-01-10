@@ -16,18 +16,24 @@ function App() {
       .then((data) =>{
         console.log(data);
         setMovies(data.results);
-    });
+    }); 
     
   }, []);
 
   return (
   <div className='movie-container'>
+
       <div className='movieHeader'>
-        <h1>Search Your Favorite Movies</h1>
+        <header>
+            <h1>Search Your Favorite Movies</h1>
+            <input type="text" placeholder='search...'></input>
+        </header>
       </div>
+
       <div className='movieTile'>
         {movies.map((movie) => <Movie key={movie.id} {...movie} />)}
       </div>
+      
   </div>
   )  
 }

@@ -7,14 +7,19 @@
   background-color: rgb(40, 38, 48);
   width: 100%;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .movieHeader h1{
   color: whitesmoke;
-  text-align: center;
 }
 
-
+.movieHeader input{
+  width: 79%;
+  height: 25px;
+  margin-bottom: 10px;
+  transform: translateY(-9px);
+}
 
 .movieTile {
   text-align: center;
