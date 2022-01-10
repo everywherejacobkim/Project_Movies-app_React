@@ -2,3 +2,26 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+.movieHeader {
+  background-color: rgb(40, 38, 48);
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.movieHeader h1{
+  color: whitesmoke;
+  text-align: center;
+}
+
+
+
+.movieTile {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}

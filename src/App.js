@@ -22,7 +22,12 @@ function App() {
 
   return (
   <div className='movie-container'>
-    {movies.map((movie) => <Movie key={movie.id} {...movie} />)}
+      <div className='movieHeader'>
+        <h1>Search Your Favorite Movies</h1>
+      </div>
+      <div className='movieTile'>
+        {movies.map((movie) => <Movie key={movie.id} {...movie} />)}
+      </div>
   </div>
   )  
 }
