@@ -1,6 +1,7 @@
 .movie-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .movieHeader {
@@ -33,3 +34,4 @@
   margin-right: auto;
   justify-content: center;
 }
+

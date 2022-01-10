@@ -62,6 +62,14 @@ function App() {
         {movies.map((movie) => <Movie key={movie.id} {...movie} />)}
       </div>
 
+      <footer>
+        <div className='footerWrap'>
+          <h4>
+            © All reserved by Jacob kim @ Langara WMDD
+          </h4>
+        </div>
+     </footer> 
+
   </div>
   )  
 }
