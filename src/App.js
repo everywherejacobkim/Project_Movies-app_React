@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import './App.css';
 import Movie from './components/Movie';
 
-const Movie_API = "https://api.themoviedb.org/3/movie/550?api_key=a146524bcccfe899ad423758704f4e83";
-const Image_API = "https://image.tmdb.org/t/p/w1280";
+const Movie_API = "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=a146524bcccfe899ad423758704f4e83";
+
 const Search_API = "https://api.themoviedb.org/3/search/movie?api_key=a146524bcccfe899ad423758704f4e83&query";
 
 function App() {
@@ -15,18 +15,16 @@ function App() {
       .then((res) => res.json())
       .then((data) =>{
         console.log(data);
-        setMovies(data);
+        setMovies(data.results);
     });
     
   }, []);
 
   return (
-    <div className="App">
-      {movies.length >0 && movies.map((movie) => 
-        <Movie key={movie.id} data={movie} />
-      )}
-    </div>
-  );  
+  <div className='movie-container'>
+    {movies.map((movie) => <Movie key={movie.id} {...movie} />)}
+  </div>
+  )  
 }
 
 export default App;
