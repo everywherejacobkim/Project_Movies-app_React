@@ -13,15 +13,19 @@ const setVoteClass = (vote) => {
     }
 };
 
-const Movie = ({title, poster_path, overview, vote_average}) => (
+const Movie = ({title, release_date, poster_path, overview, vote_average}) => (
     <div className="movie">
        
        <img src= {Image_API + poster_path} alt={title}></img>
        
        <div className="movie-info">
-            <h3>{title}</h3>
-            <div className={`tag ${setVoteClass(vote_average)
-            }`}> {vote_average}</div>
+            <span>
+                <h3>{title}</h3>
+                <h5>Release Date: &nbsp;{release_date}</h5>
+            </span>
+                <div className={`tag ${setVoteClass(vote_average)
+                }`}> {vote_average}</div>
+           
        </div>
 
        <div className="movie-over">
