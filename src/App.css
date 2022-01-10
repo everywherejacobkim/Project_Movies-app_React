@@ -4,7 +4,7 @@
 }
 
 .movieHeader {
-  background-color: rgb(40, 38, 48);
+  background: linear-gradient(90deg, rgb(26, 25, 48) 0%, rgb(59, 70, 109) 50%, rgb(54, 42, 100) 100%);
   width: 100%;
   margin-bottom: 20px;
   text-align: center;
@@ -12,6 +12,8 @@
 
 .movieHeader h1{
   color: whitesmoke;
+  font-family: 'Anton';
+  letter-spacing: 1px;
 }
 
 .movieHeader input{
